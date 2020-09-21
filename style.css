@@ -1,0 +1,46 @@
+body {
+    background: #66655D;
+}
+
+.naslov {
+    position: absolute;
+    width: 149px;
+    height: 42px;
+    left: 162px;
+    top: 21px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.logo{
+    position: absolute;
+    width: 142px;
+    height: 142px;
+    left: 0px;
+    top: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: absolute;
+    width: 400px;
+    height: 258px;
+    left: 485px;
+    top: 225px;
+}
+ul{
+    font-size: large;
+}
+
+p {
+    font-size: large;
+}
