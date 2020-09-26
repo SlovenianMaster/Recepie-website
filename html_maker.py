@@ -1,8 +1,8 @@
 import yaml
-data_file = open("website/site.yaml")
+data_file = open("c:/Programiranje/git/website/sacher_cake_eng.yaml")
 data = yaml.load(data_file, Loader=yaml.FullLoader)
 
-with open("website/site.yaml", "r") as stream:
+with open("c:/Programiranje/git/website/sacher_cake_eng.yaml", "r") as stream:
     out = yaml.load(stream, Loader=yaml.FullLoader)
 
 a = data["ingridients"]
@@ -20,14 +20,14 @@ def list_make():
 
 
 def file_get():
-    f = open("website/template.html", "r")
+    f = open("c:/Programiranje/git/website/template.html", "r")
     return (f.read())
 
 def replace():
     html = file_get()
     x = html.replace("<!--title-->", data["title"])
     y = x.replace("<!--name-->", data["title"])
-    z = y.replace("<!--instructions-->", data["recepie"])
+    z = y.replace("<!--instructions-->", data["recipe"])
     q = z.replace("<!--list-->", list_make())
     return(q)
 
@@ -40,3 +40,5 @@ def new_file():
     f = open(c + ".html", "x")
     f.write(replace())
     f.close()
+
+new_file()
